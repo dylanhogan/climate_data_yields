@@ -1,7 +1,7 @@
 This repository contains replication code for ERA5-Land and GMFD Uncover The Effect of Daily Temperature Extremes on Agricultural Yields, which is an unpublished manuscript currently in review. The code in this repository analyzes climate and agricultural yield data from various sources. These data are available for download from the [Harvard Dataverse](https://doi.org/10.7910/DVN/XRMDBW).
 
 ## System requirements and installation guide
-The code was written and tested in R, version 4.2.1. Packages required to run the code are listed in `R_analysis/init.R`. This script is set up to install packages to your current R environment if they are not already installed. You can also install these packages manually with `install.packages()` or a conda environment. In addition, users must have [jupyter](https://jupyter.org/) installed to run the analysis, as the functions written in R are run in notebooks to produce the final outputs (i.e., figures and tables) for the paper. 
+The code was written and tested in R, version 4.2.1. Packages required to run the code are listed in `R_analysis/init.R`. This script is set up to install packages to your current R environment if they are not already installed. You can also install these packages manually with `install.packages()` or a conda environment. In addition, users must have [jupyter](https://jupyter.org/) installed [with R](https://datatofish.com/r-jupyter-notebook/), as Jupyter notebooks are used to run the R functions and produce the final outputs (i.e., figures and tables) for the paper. 
 
 ## Instructions for use
 
