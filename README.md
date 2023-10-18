@@ -8,7 +8,7 @@ The code was written and tested in R, version 4.2.1. Packages required to run th
 To run the code, download the compressed files from the link above and unzip all files in the same directory. Modify the `data_path.txt` file in the root folder of this repository with the directory containing the unzipped data files. The notebooks and functions will look for the input data sets in this specified path. The code files are organized as follows:
 
 - `R_analysis/`
-    - `analysis/` - Contains functions for loading data running each step of the econometric analysis in the paper, i.e., weather-yield relationships, cross validation, and climate projections.
+    - `analysis/` - Contains functions for loading data and running each step of the econometric analysis in the paper, i.e., weather-yield relationships, cross validation, and climate projections.
     - `figures/` - Contains functions for plotting results from the analysis, including figures in the main text and Supplementary Information.
     - `notebooks/` - Contains Jupyter notebooks, which import functions from the other folders to generate and store output for the paper.
 - `outputs/` - stores intermediate and final outputs, including all tables and figures for the paper.
