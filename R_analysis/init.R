@@ -22,7 +22,8 @@ pkgs = c(
     'xtable',
     'ggh4x',
     'sf',
-    'doRNG'
+    'doRNG',
+    'cowplot'
 )
 pacman::p_load(pkgs, character.only = TRUE)
 

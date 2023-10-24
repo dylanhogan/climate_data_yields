@@ -98,6 +98,9 @@ load_evi_panel = function(clim) {
     estim = estim |> 
         filter(year < 2010, year > 2000)
     
+    # ids = df |> select(latitude, longitude, id) 
+    # estim = estim |> left_join(
+    
    return(estim)
     
 }
@@ -119,7 +122,7 @@ run_evi_out_of_sample = function(
                       
     sample_years = function(years) {
         # Split the data into train and test sets based on the year
-        train_indices = sample(length(years), floor(0.7 * length(years)))
+        train_indices = sample(length(years), floor(0.75 * length(years)))
         train_years = years[train_indices]
         test_years = years[-train_indices]
         return(list(train=train_years, test=test_years))
@@ -194,7 +197,9 @@ run_evi_out_of_sample = function(
                     rmse = regression_prediction_rmse(train_data, test_data),
                     baseline = regression_prediction_rmse(train_data, test_data, baseline=TRUE),
                     crop_station = crop_station_filter,
-                    n = nrow(estim)
+                    n = nrow(estim),
+                    train = length(y[['train']]),
+                    test = length(y[['test']])
                 )
             )
         }
