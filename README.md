@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/706450816.svg)](https://zenodo.org/doi/10.5281/zenodo.10976194)
+
 This repository contains replication code for ERA5-Land and GMFD Uncover The Effect of Daily Temperature Extremes on Agricultural Yields, which is an unpublished manuscript currently in review. The code in this repository analyzes climate and agricultural yield data from various sources. These data are available for download from the [Harvard Dataverse](https://doi.org/10.7910/DVN/XRMDBW).
 
 ## System requirements and installation guide
